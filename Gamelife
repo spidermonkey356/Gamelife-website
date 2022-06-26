@@ -1,0 +1,455 @@
+/* whole page */
+
+body {
+	margin: 0;
+
+	font-family: Comfortaa;
+}
+
+h1 {
+	font-family: Sarpanch;
+	font-size: 80px;
+	margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Lato;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 30px;
+	margin-bottom: 70px;
+}
+
+h3 {
+	font-size: 48px;
+	margin-bottom: 16px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 900;
+	color: #fcba03;
+	margin-bottom: 10px;
+}
+
+p {
+	color: #999;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+.button {
+	font-family: Lato;
+	font-weight: 400;
+	color: white;
+	background: #fcba03;
+	padding: 10px 20px;
+	border-radius: 100px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-item {
+	padding: 3%;
+}
+
+/* header */
+
+header {
+	height: 80px;
+	width: 100%;
+	background: white;
+	position: fixed;
+	box-shadow: 0 0 5px #555;
+	overflow: hidden;
+	transition: 0.4s;
+}
+
+header.dropped {
+	height: 160px;
+}
+
+.menu {
+	display: none;
+}
+
+.fa-times {
+	display: none;
+}
+
+.dropped .fa-bars {
+	display: none;
+}
+.dropped .fa-times {
+	display: initial;
+}
+
+.logo {
+	float: left;
+	font-size: 60px;
+	color: #fcba03;
+	line-height: 80px;
+	padding-left: 15px;
+
+	/* outline: 4px solid rebeccapurple; */
+}
+
+.logo-text {
+	font-family: Sarpanch;
+	font-size: 60px;
+	float: left;
+	color: #fcba03;
+	line-height: 80px;
+	padding-left: 15px;
+
+	/* outline: 4px solid cadetblue; */
+}
+
+.menu {
+	height: 80px;
+	text-align: right;
+	padding-right: 20px;
+	line-height: 80px;
+	font-size: 20px;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+
+	/* outline: 4px solid coral; */
+}
+
+li {
+	line-height: 80px;
+	padding: 0 20px;
+}
+
+li:hover {
+	color: #fcba03;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* main */
+
+main {
+	height: 100vh;
+	display: flex;
+	background: url(images/xbox.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.main-content {
+	margin: auto;
+	text-align: center;
+	color: white;
+}
+
+.yellow {
+	color: #fcba03;
+}
+
+/* sections */
+
+.icon {
+	font-size: 64px;
+	color: #fcba03;
+	margin-bottom: 16px;
+}
+
+.immerse .flex-item {
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.immerse .flex-item:first-child {
+	padding: 0;
+}
+
+.immerse img {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	object-position: right;
+}
+
+.immerse p {
+	margin-bottom: 50px;
+}
+
+.separator span {
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background: #fcba03;
+	margin: 0 10px;
+}
+
+.location {
+	text-align: center;
+}
+
+.location h3 {
+	font-weight: 900;
+	margin: 0 0 30px;
+}
+
+iframe {
+	width: 100%;
+	height: 400px;
+}
+
+/* footer */
+
+footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+}
+
+.footer-top {
+	color: white;
+	padding: 30px;
+}
+
+footer h6 {
+	font-size: 24px;
+	margin: 20px 0;
+}
+
+footer hr {
+	border-color: #fcba03;
+}
+
+footer span {
+	padding: 0 10px;
+}
+
+footer span:hover {
+	color: #fcba03;
+	cursor: pointer;
+}
+
+footer input {
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 5px;
+	font-size: 16px;
+}
+
+.footer-bottom {
+	height: 100px;
+	line-height: 100px;
+	background-color: #fcba03;
+}
+
+/**** media queries ****/
+
+@media screen and (max-width: 768px) {
+	.flex-container {
+		display: block;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	ul {
+		justify-content: space-evenly;
+	}
+}
+
+Thank you Steve - https://www.youtube.com/watch?v=bMJTsAZm92Q&ab_channel=GetonwithIT
+
+I really learnt a lot from this video.
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="The best gaming resource on the web!" />
+		<meta name="keywords" content="game xbox ps4 pc" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@400;900&family=Sarpanch:wght@800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<title>GAMELIFE</title>
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="logo">
+				<i class="fas fa-gamepad"></i>
+			</div>
+			<div class="logo-text">GAMELIFE</div>
+			<div id="menu" class="menu">
+				<i class="fas fa-bars"></i>
+				<i class="fas fa-times"></i>
+			</div>
+			<nav>
+				<ul>
+					<li><i class="fab fa-steam-symbol"></i></li>
+					<li><i class="fab fa-playstation"></i></li>
+					<li><i class="fab fa-xbox"></i></li>
+					<li><i class="fas fa-mobile-alt"></i></li>
+					<li><i class="fas fa-search"></i></li>
+					<li><i class="fas fa-shopping-basket"></i></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- End of header -->
+		<main>
+			<div class="main-content">
+				<h1>Game like a <span class="yellow">BOSS</span></h1>
+				<h2>
+					<div id="gamelife">#gamelife</div>
+				</h2>
+				<a class="button" href="#">LEVEL UP</a>
+			</div>
+		</main>
+		<!-- End of main -->
+
+		<section class="features">
+			<div class="flex-container">
+				<div class="flex-item">
+					<div class="icon">
+						<i class="fas fa-gift"></i>
+					</div>
+					<h4>Gift ideas</h4>
+					<p>
+						Mauris sit amet massa vitae tortor condimentum lacinia quis vel eros
+						donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue
+						lacus viverra.
+					</p>
+				</div>
+
+				<div class="flex-item">
+					<div class="icon">
+						<i class="fas fa-heart"></i>
+					</div>
+					<h4>Staff picks</h4>
+					<p>
+						Turpis in eu mi bibendum neque egestas congue quisque egestas diam
+						in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc
+						sed blandit libero.
+					</p>
+				</div>
+
+				<div class="flex-item">
+					<div class="icon">
+						<i class="fas fa-tags"></i>
+					</div>
+					<h4>Price promise</h4>
+					<p>
+						Viverra nam libero justo laoreet sit amet cursus sit amet dictum sit
+						amet justo donec enim diam vulputate ut pharetra sit amet aliquam id
+						diam.
+					</p>
+				</div>
+
+				<div class="flex-item">
+					<div class="icon">
+						<i class="fas fa-bolt"></i>
+					</div>
+					<h4>Lightning deals</h4>
+					<p>
+						Nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut
+						diam quam nulla porttitor massa id neque aliquam vestibulum morbi
+						blandit cursus risus.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="immerse">
+			<div class="flex-container">
+				<div class="flex-item">
+					<img src="images/vr-1.jpg" alt="" />
+				</div>
+				<div class="flex-item">
+					<h3>Immerse yourself</h3>
+					<div class="separator"><span></span><span></span><span></span></div>
+					<p>
+						Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi
+						tempus imperdiet nulla malesuada pellentesque elit eget gravida cum
+						sociis natoque penatibus et magnis dis parturient montes nascetur.
+						Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel
+						risus commodo.
+					</p>
+					<a class="button" href="#">READ MORE</a>
+				</div>
+			</div>
+		</section>
+		<section class="location">
+			<h5>Want To Visit Us?</h5>
+			<h3>We'd love to say hi!</h3>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.748492241262!2d-0.1269978835229147!3d51.49948271910195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c40c8d9b99%3A0x7797a8ef74e1f7c!2sPalace%20of%20Westminster!5e0!3m2!1sen!2sza!4v1629969451357!5m2!1sen!2sza"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+			></iframe>
+		</section>
+		<footer>
+			<div class="footer-top flex-container">
+				<div class="flex-item">
+					<h6>Contact</h6>
+					<hr />
+					<i class="fas fa-phone"></i> 07911 123456
+				</div>
+				<div class="flex-item">
+					<h6>Follow</h6>
+					<hr />
+					<span><i class="fab fa-facebook"></i></span>
+					<span><i class="fab fa-twitter"></i></span>
+					<span><i class="fab fa-instagram"></i></span>
+					<span><i class="fab fa-youtube"></i></span>
+				</div>
+				<div class="flex-item">
+					<h6>Newsletter</h6>
+					<hr />
+					<input placeholder="Email" type="text" />
+					<a class="button" href="#">Subscribe</a>
+				</div>
+			</div>
+			<div class="footer-bottom">&copy; Get on with IT</div>
+		</footer>
+		<script>
+			document.getElementById("menu").addEventListener("click", function () {
+				document.getElementById("header").classList.toggle("dropped");
+			});
+		</script>
+	</body>
+</html>
